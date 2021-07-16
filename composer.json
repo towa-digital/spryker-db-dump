@@ -1,0 +1,38 @@
+{
+  "name": "simonrauch/spryker-db-dump",
+  "type": "library",
+  "description": "Spryker DB Dump Tool",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Simon Rauch",
+      "email": "sr@simonrauch.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.3",
+    "spryker/config": "^3.0.0",
+    "spryker/kernel": "^3.48.0",
+    "spryker/propel": "*"
+  },
+  "require-dev": {
+    "spryker/code-sniffer": "*"
+  },
+  "suggest": {},
+  "autoload": {
+    "psr-4": {
+      "SimonRauch\\": "src/SimonRauch/"
+    }
+  },
+  "autoload-dev": {},
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "scripts": {
+    "cs-check": "phpcs -p -s --standard=vendor/spryker/code-sniffer/Spryker/ruleset.xml src/",
+    "cs-fix": "phpcbf -p --standard=vendor/spryker/code-sniffer/Spryker/ruleset.xml src/"
+  },
+  "extra": {},
+  "config": {
+    "sort-packages": true
+  }
+}
