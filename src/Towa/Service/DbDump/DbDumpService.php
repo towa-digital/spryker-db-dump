@@ -5,12 +5,12 @@
  * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
  */
 
-namespace SimonRauch\Service\DbDump;
+namespace Towa\Service\DbDump;
 
 use Spryker\Service\Kernel\AbstractService;
 
 /**
- * @method \SimonRauch\Service\DbDump\DbDumpServiceFactory getFactory()
+ * @method \Towa\Service\DbDump\DbDumpServiceFactory getFactory()
  */
 class DbDumpService extends AbstractService implements DbDumpServiceInterface
 {

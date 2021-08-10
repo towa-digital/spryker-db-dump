@@ -5,11 +5,11 @@
  * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
  */
 
-namespace SimonRauch\Service\DbDump;
+namespace Towa\Service\DbDump;
 
-use SimonRauch\Shared\DbDump\DbDumpConstants;
 use Spryker\Service\Kernel\AbstractBundleConfig;
 use Spryker\Shared\Propel\PropelConstants;
+use Towa\Shared\DbDump\DbDumpConstants;
 
 class DbDumpConfig extends AbstractBundleConfig
 {

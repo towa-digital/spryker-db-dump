@@ -5,16 +5,16 @@
  * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
  */
 
-namespace SimonRauch\Zed\DbDump\Communication;
+namespace Towa\Zed\DbDump\Communication;
 
-use SimonRauch\Service\DbDump\DbDumpServiceInterface;
-use SimonRauch\Zed\DbDump\DbDumpDependencyProvider;
 use Spryker\Zed\Kernel\Communication\AbstractCommunicationFactory;
+use Towa\Service\DbDump\DbDumpServiceInterface;
+use Towa\Zed\DbDump\DbDumpDependencyProvider;
 
 class DbDumpCommunicationFactory extends AbstractCommunicationFactory
 {
     /**
-     * @return \SimonRauch\Service\DbDump\DbDumpServiceInterface
+     * @return \Towa\Service\DbDump\DbDumpServiceInterface
      */
     public function getDbDumpService(): DbDumpServiceInterface
     {

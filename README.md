@@ -9,7 +9,7 @@ Creates and restores database dumps for Spryker.
 Install the package:
 
 ```bash
-composer require --dev simonrauch/spryker-db-dump
+composer require --dev towa/spryker-db-dump
 ```
 
 Add namespace as core namespace in your configs:
@@ -17,7 +17,7 @@ Add namespace as core namespace in your configs:
 ```php
 $config[KernelConstants::CORE_NAMESPACES] = [
     ...
-    'SimonRauch',
+    'Towa',
 ];
 ```
 

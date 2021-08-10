@@ -5,27 +5,27 @@
  * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
  */
 
-namespace SimonRauch\Service\DbDump\Executor;
+namespace Towa\Service\DbDump\Executor;
 
-use SimonRauch\Service\DbDump\DbDumpConfig;
-use SimonRauch\Service\DbDump\Dependency\Plugin\DbDumpPluginInterface;
-use SimonRauch\Service\DbDump\Exception\NoPluginForEngineFoundException;
+use Towa\Service\DbDump\DbDumpConfig;
+use Towa\Service\DbDump\Dependency\Plugin\DbDumpPluginInterface;
+use Towa\Service\DbDump\Exception\NoPluginForEngineFoundException;
 
 class Executor implements ExecutorInterface
 {
     /**
-     * @var \SimonRauch\Service\DbDump\DbDumpConfig
+     * @var \Towa\Service\DbDump\DbDumpConfig
      */
     protected $config;
 
     /**
-     * @var \SimonRauch\Service\DbDump\Dependency\Plugin\DbDumpPluginInterface[]
+     * @var \Towa\Service\DbDump\Dependency\Plugin\DbDumpPluginInterface[]
      */
     protected $dbDumpPlugins;
 
     /**
-     * @param \SimonRauch\Service\DbDump\DbDumpConfig $config
-     * @param \SimonRauch\Service\DbDump\Dependency\Plugin\DbDumpPluginInterface[] $dbDumpPlugins
+     * @param \Towa\Service\DbDump\DbDumpConfig $config
+     * @param \Towa\Service\DbDump\Dependency\Plugin\DbDumpPluginInterface[] $dbDumpPlugins
      */
     public function __construct(DbDumpConfig $config, array $dbDumpPlugins)
     {
@@ -50,9 +50,9 @@ class Executor implements ExecutorInterface
     }
 
     /**
-     * @throws \SimonRauch\Service\DbDump\Exception\NoPluginForEngineFoundException
+     * @throws \Towa\Service\DbDump\Exception\NoPluginForEngineFoundException
      *
-     * @return \SimonRauch\Service\DbDump\Dependency\Plugin\DbDumpPluginInterface
+     * @return \Towa\Service\DbDump\Dependency\Plugin\DbDumpPluginInterface
      */
     protected function findDbDumpPlugin(): DbDumpPluginInterface
     {

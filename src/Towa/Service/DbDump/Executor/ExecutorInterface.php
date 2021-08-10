@@ -5,15 +5,10 @@
  * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
  */
 
-namespace SimonRauch\Service\DbDump\Dependency\Plugin;
+namespace Towa\Service\DbDump\Executor;
 
-interface DbDumpPluginInterface
+interface ExecutorInterface
 {
-    /**
-     * @return string
-     */
-    public function getApplicableEngine(): string;
-
     /**
      * @return void
      */

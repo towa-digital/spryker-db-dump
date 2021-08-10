@@ -5,9 +5,9 @@
  * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
  */
 
-namespace SimonRauch\Service\DbDump\Executor;
+namespace Towa\Service\DbDump;
 
-interface ExecutorInterface
+interface DbDumpServiceInterface
 {
     /**
      * @return void

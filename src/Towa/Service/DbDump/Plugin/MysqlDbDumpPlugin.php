@@ -5,14 +5,14 @@
  * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
  */
 
-namespace SimonRauch\Service\DbDump\Plugin;
+namespace Towa\Service\DbDump\Plugin;
 
-use SimonRauch\Service\DbDump\Dependency\Plugin\DbDumpPluginInterface;
 use Spryker\Service\Kernel\AbstractPlugin;
 use Spryker\Zed\Propel\PropelConfig;
+use Towa\Service\DbDump\Dependency\Plugin\DbDumpPluginInterface;
 
 /**
- * @method \SimonRauch\Service\DbDump\DbDumpConfig getConfig()
+ * @method \Towa\Service\DbDump\DbDumpConfig getConfig()
  */
 class MysqlDbDumpPlugin extends AbstractPlugin implements DbDumpPluginInterface
 {

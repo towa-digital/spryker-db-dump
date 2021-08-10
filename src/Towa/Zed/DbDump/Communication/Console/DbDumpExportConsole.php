@@ -5,18 +5,18 @@
  * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
  */
 
-namespace SimonRauch\Zed\DbDump\Communication\Console;
+namespace Towa\Zed\DbDump\Communication\Console;
 
 use Spryker\Zed\Kernel\Communication\Console\Console;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
 /**
- * @method \SimonRauch\Zed\DbDump\Communication\DbDumpCommunicationFactory getFactory()
+ * @method \Towa\Zed\DbDump\Communication\DbDumpCommunicationFactory getFactory()
  */
-class DbDumpRestoreConsole extends Console
+class DbDumpExportConsole extends Console
 {
-    public const COMMAND_NAME = 'db-dump:restore';
+    public const COMMAND_NAME = 'db-dump:export';
 
     /**
      * @return void
@@ -24,7 +24,7 @@ class DbDumpRestoreConsole extends Console
     protected function configure(): void
     {
         $this->setName(static::COMMAND_NAME);
-        $this->setDescription('Restores database dump.');
+        $this->setDescription('Dumps full db.');
     }
 
     /**
@@ -37,7 +37,7 @@ class DbDumpRestoreConsole extends Console
     {
         $this->getFactory()
             ->getDbDumpService()
-            ->restoreDump();
+            ->createDump();
 
         return Console::CODE_SUCCESS;
     }

@@ -5,11 +5,11 @@
  * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
  */
 
-namespace SimonRauch\Service\DbDump;
+namespace Towa\Service\DbDump;
 
-use SimonRauch\Service\DbDump\Plugin\MysqlDbDumpPlugin;
 use Spryker\Service\Kernel\AbstractBundleDependencyProvider;
 use Spryker\Service\Kernel\Container;
+use Towa\Service\DbDump\Plugin\MysqlDbDumpPlugin;
 
 class DbDumpDependencyProvider extends AbstractBundleDependencyProvider
 {
@@ -42,7 +42,7 @@ class DbDumpDependencyProvider extends AbstractBundleDependencyProvider
     }
 
     /**
-     * @return \SimonRauch\Service\DbDump\Dependency\Plugin\DbDumpPluginInterface[]
+     * @return \Towa\Service\DbDump\Dependency\Plugin\DbDumpPluginInterface[]
      */
     protected function getDbDumpPlugins(): array
     {

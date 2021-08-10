@@ -5,19 +5,19 @@
  * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
  */
 
-namespace SimonRauch\Service\DbDump;
+namespace Towa\Service\DbDump;
 
-use SimonRauch\Service\DbDump\Executor\Executor;
-use SimonRauch\Service\DbDump\Executor\ExecutorInterface;
 use Spryker\Service\Kernel\AbstractServiceFactory;
+use Towa\Service\DbDump\Executor\Executor;
+use Towa\Service\DbDump\Executor\ExecutorInterface;
 
 /**
- * @method \SimonRauch\Service\DbDump\DbDumpConfig getConfig()
+ * @method \Towa\Service\DbDump\DbDumpConfig getConfig()
  */
 class DbDumpServiceFactory extends AbstractServiceFactory
 {
     /**
-     * @return \SimonRauch\Service\DbDump\Executor\ExecutorInterface
+     * @return \Towa\Service\DbDump\Executor\ExecutorInterface
      */
     public function createExecutor(): ExecutorInterface
     {
@@ -28,7 +28,7 @@ class DbDumpServiceFactory extends AbstractServiceFactory
     }
 
     /**
-     * @return \SimonRauch\Service\DbDump\Dependency\Plugin\DbDumpPluginInterface[]
+     * @return \Towa\Service\DbDump\Dependency\Plugin\DbDumpPluginInterface[]
      */
     protected function getDbDumpPlugins(): array
     {

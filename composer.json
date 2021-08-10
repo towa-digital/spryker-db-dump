@@ -1,12 +1,12 @@
 {
-  "name": "simonrauch/spryker-db-dump",
+  "name": "towa/spryker-db-dump",
   "type": "library",
   "description": "Spryker DB Dump Tool",
   "license": "MIT",
   "authors": [
     {
       "name": "Simon Rauch",
-      "email": "sr@simonrauch.com"
+      "email": "simon.rauch@towa.at"
     }
   ],
   "require": {
@@ -21,7 +21,7 @@
   "suggest": {},
   "autoload": {
     "psr-4": {
-      "SimonRauch\\": "src/SimonRauch/"
+      "Towa\\": "src/Towa/"
     }
   },
   "autoload-dev": {},
